@@ -1,6 +1,6 @@
 from classes.block import Block
 from classes.stack import Stack
-from classes.file import File
+#from classes.file import File
 
 #instances
 stack = Stack()
@@ -11,6 +11,5 @@ second_block = Block.create_block('second', genesis_block, 'its a little test :)
 stack.empiler(genesis_block)
 stack.empiler(second_block)
 
+#print the hash of the first chained block in the stack
 print((stack.exposed_stack())[0].hash)
-
-
